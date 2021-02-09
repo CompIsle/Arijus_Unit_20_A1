@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+<title>L3U20A1</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Client Side Customisation of Web Pages</h1>
+  <p>by Arijus Gestautas</p>
+</div>
+
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="boxmodel.html">Box Model CSS</a></li>
+</ul>
+
+<div class="content">
+  <h1>How do HTML files access CSS?</h1>
+  <p>Cascading Style Sheet(CSS) is used to style webpages and often instructs the browser how most of the HTML elements should look like, these could be a font size, a colour also 
+      it can tell where it should be positioned on the webpage.</p>
+      
+      There are a few ways of linking CSS to HTML, these are:
+      <br>
+      <br>
+      Inline, Internal and External linking.
+      <h2>Inline</h2>
+   <p>Inline linking is where the CSS code is applied to one element within a page, this is done in the HTML code by adding a style attribute to the HTML tag.
+       Inline style linking will override any previous set styles, meaning that a header which you styled, will no longer have colours, changed font size or any others applied to it.
+       This type of linking can be useful when you're using a framework, as this can be used when you make small changes to the CSS code, for example when you change a background colour on a header.
+       <br>
+       <br>
+       <code>
+        &lt;p style="color: rebeccapurple;">&lt;/p
+      </code>
+       <p style="color: rebeccapurple">Above code will make this text a "Rebecca Purple" colour.</p> 
+       <h2>Internal</h2>
+       <p>Internal code linking is where the CSS is written inside the webpages header, the CSS code will be placed inside the style tags, so the browser has the knowledge 
+           to interpret that section of the code into CSS. Most of the time, Internal code linking is more preffered than Inline linking because the code is less duplicated.
+           Each CSS style is applied to every HTML tag that it applies to, if you use many paragraph tags inside of a webpage, you could possibly apply one style to them all using only 
+           one CSS style.
+           <br>
+           <br>
+           <pre>
+          &lt;style>
+               p{
+                   color:blue;
+               }
+           &lt;/style>
+        </pre>
+           The above code will make all of the text which has a &lt;p>&lt;/p tag a blue color.
+           <br>
+           <br>
+           Example:
+           <br>
+           <center><img src="./images/Internal.png"></center>
+           <h2>External</h2>
+           <p>External styling works in a similar way as Internal styling, individual styling can be applied to any of the HTML tags, the benefits of this is that
+             it reduces the duplication of CSS. This type of linking is not written in the header, it is found in another file which most of the time should be called "Styles.css", 
+             this is saved seperately, in my own code i've used External linking to change the background colour of the body and header.
+           <br>
+           <br>
+           Example:
+           <br>
+           <center><img src="./images/External.png"></center>
+           </p>
+           <h2>Assess different implementation styles of CSS</h2>
+           <p>There are three different implementation styles, these are Internal, External and Inline style sheets.
+             <h2>Advantages of Inline</h2>
+             <p>I. Whilst using Inline linking, you don't need to create an external document, you'd have to create one if you'd be using an external style sheet. There's no need
+               to edit a new element in your document. This type of implementation style is easy to use and is time saving.
+               <br>
+               <br>
+               II. Most web designers when they work on a new project, they often use Inline because it's often much easier to scroll up in the source instead of going to an external file to access
+               the code, this can be used to debug errors.
+               <br>
+               <br>
+               III. Inline CSS has a lower HTTP request meaning that Internal CSS websites load much faster than External website. 
+               <h2>Disadvantages of Inline</h2>
+                I. The inline style must be used for every element you want it on, it can be more time consuming as you'd have to manually go and add to each element. If you wanted to change
+                font, you'd have to use the &lt;p>&lt;/p tags in the document, this will also add onto the download time for the website user when they're opening the site.
+                <br>
+                <br>
+                II. It's very easy to override other style sheets such as external and internal, if it wasn't intended. This can be a huge issue for some web developers.
+                <h2>Advantages of Internal</h2>
+                I. The same style is applied on every element, if you want the headings and paragraphs to have the same font, you'd have to add an inline style tag within the internal
+                style document. This is beneficial if you want to have the same fonts, as you only need to do it once.
+                <br>
+                <br>
+                II. It's a very useful tool when it comes to testing and is handy for web developers as they allow you to test the styles in the context of the entire website without
+                breaking any pages apart from the one that is being tested.
+                <h2>Disadvantages of Internal</h2>
+                I. Internal provides very slow loading to the web page, it is because there are less HTTP requests and are more slower than External and Inline. This can put a lot 
+                of people off if they're inpatient.
+                <br>
+                <br>
+                II. Whilst the web developers are working, the page size increases. It's often helpful when they're working offline although it can cause the site
+                to load slowly when it is online.
+                <h2>Advantages of External</h2>
+                I. File size is reduced because the styling text is located on a different document, meaning that the file sized of the pages will be reduced. If using this type of styling,
+                the structure and code will be much easier to read for developers and other people if they edit the code.
+                <br>
+                <br>
+                II. Style is seperated from HTML and is put withing a CSS style sheet, meaning that there is less code within the webpage, but more importantly it makes it more easy to work with and
+                is less confusing.
+                <h2>Disadvantages of External</h2>
+                I. If you have a website which is small, it could be more complicated to use the External style sheets because they can increase quite fast, and if you have deleted web pages it can 
+                be confusing as you wouldn't know which style sheet is needed.
+                <br>
+                <br>
+                All of the three implementation styles have their own advantages and disadvantages, but all of them have features which might be really useful for somebody else as. It also depends
+                on what type of website you're making, if the website you're constructing is only on a single page, with not much colour or design it would most likely be best to use Internal.
+                Personally, I would use External implementation on all of my websites, as this provides me with less confusion when editing CSS and makes the code look less cluttered.
+
+          
+             </p>
+
+
+           </p>
+
+
+   </p>   
+      
+
+
+</div>
+
+</body>
+</html>
