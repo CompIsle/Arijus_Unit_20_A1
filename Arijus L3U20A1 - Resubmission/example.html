@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Examples of CSS</TITLE>
+    <h1>Examples of margins, padding and borders.</h1>
+    <style>
+        .headerlink {
+            background-color: burlywood;
+            color: #185;
+        }
+      ul { 
+        background: yellow; 
+        margin: 12px 12px 12px 12px;
+        padding: 3px 3px 3px 3px;
+                                     /* No borders set */
+      }
+      li{ 
+        color: white;                /* text color is white. */ 
+        background: burlywood;            /* Content, padding will be burlywood colour. */
+        margin: 12px 12px 12px 12px;
+        padding: 12px 0px 12px 12px; /* 0px padding right */
+        list-style: none          
+                                     /* No borders are set */
+      }
+      li.withborder {
+        border-style: dashed;
+        border-width: medium;        /* sets border width on all sides */
+        border-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>The first element of the list, notice how it doesn't have a border around it.</li>
+      <li class="withborder">The second element of the list is...
+          slightly longer to show how the border wraps
+      </ul>
+      <h1>CSS Example of Inline Linking</h1>
+      <div class="inlinelink" style="background-color: burlywood; color: #185;">This text will have burlywood background colour and green text.</div>
+      <xmp><div class="inlinelink" style="background-color: burlywood; color: #185;">This text will have burlywood background colour and green text.</div></xmp>
+      <br>
+      <br>
+      <h1>CSS Example of Header Linking</h1>
+      <div class="headerlink">This type of linking will have the same outcome as Inline Linking.</div>
+      <h3>Code:</h3>
+      <xmp>
+        <head>
+            <title>Examples of CSS</title>
+            <h1>Examples of margins, padding and borders.</h1>
+            <style>
+                .headerlink {
+                    background-color: burlywood;
+                    color: #185;
+                }
+                
+                </style>
+            </head>
+
+<div class="headerlink">This type of linking will have the same outcome as Inline Linking.</div>
+        </xmp>
+
+        <h1>CSS Example of External Linking</h1>
+        <div class="externallink">This type of linking will also have the same outcome as Inline and Header linking.</div>
+        <xmp><div class="externallink">This type of linking will also have the same outcome as Inline and Header linking.</div>
+        
+            <style>
+            .externallink {
+                background-color:burlywood;
+                color: #185;
+              }
+</style>
+        </xmp>
+
+        <p>This code will be stored in an external file called "styles.css", it's almost the same as "Header Linking", but is stored outside of the HTML code.</p>
+    </body>
+</html>
